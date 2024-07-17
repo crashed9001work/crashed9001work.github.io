@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+
     <div style="display: flex; justify-content: center;">
         <h1>Сайт Дмитрия</h1>
     </div>
@@ -32,9 +39,11 @@
             </div>
             <div>
                 <img src="photo.jpg" alt="">
-                <button class="button-49" role="button">Позвонить</button>
+                <button class="button-49" role="button" onclick="play()">Позвонить</button>
             </div>
         </div>
     </div>
+
+    <audio id="audio" src="pribyl-godzho-satoru.mp3"></audio>
 </body>
 </html>
